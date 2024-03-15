@@ -137,13 +137,16 @@ regression_OLS.summary()
 NOTA:
     El criterio de Akaike (AIC) y el criterio Bayesiano (BIC) son medidas utilizadas para
     la selección de modelos en estadística, específicamente en el contexto de regresión.
-    El AIC cuantifica la cantidad de información perdida por un modelo dado,
+    Estas medidas penalizan la complejidad del modelo, favoreciendo aquellos modelos
+    que tienen un buen ajuste a los datos pero que no son excesivamente complejos.
+    
+    El AIC (en terminos simples) cuantifica la cantidad de información perdida por un modelo dado,
     cuanto menor sea el valor de AIC, mejor es el modelo.
-    El BIC también penaliza la complejidad del modelo, pero de manera más fuerte que el AIC.
+    El BIC (en terminos simples) también penaliza la complejidad del modelo, pero de manera más fuerte que el AIC.
     
 Analisis:
     Siendo estrictos con nuestro SL y sumando el hecho de que tanto el AIC como el BIC decrecen al
-    eliminar la columna nro 5, podemos decir que el modelo que mejor se ajusta a lo que sería
+    eliminar la columna nro 5, podemos decir que el modelo que mejor se ajusta a las predicciones es
     una regresión lineal simple quedando únicamente con el término independiente y la variable
     de la columna 3 (R&D Spend)
 '''
